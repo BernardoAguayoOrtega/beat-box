@@ -49,11 +49,17 @@ let beats = {
  * Function to play the beat upon a press of key
  * HINT: use the keyCode
  */
-triggerBeat = (event) => {};
+const triggerBeat = (event) => {
+	const KeyCode = event.keyCode;
+
+	if (KeyCode in beats) {
+		let keyPress = beats[KeyCode];
+
+		keyPress.beat.play();
+	}
+};
 
 /**
  * Keydown listener to fire triggerBeat function
  */
-document.addEventListener('keydown', (e) => {
-	console.dir(e);
-});
+document.addEventListener('keydown', triggerBeat);
