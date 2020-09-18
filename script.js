@@ -18,6 +18,7 @@
 let beats = {
 	65: {
 		beat: new Beat('./assets/Piano Chord 331.mp3'),
+		button: new Button('#00fffe', 65),
 	},
 	83: {
 		beat: new Beat('./assets/Piano Chord 209.mp3'),
@@ -56,6 +57,7 @@ const triggerBeat = (event) => {
 		let keyPress = beats[KeyCode];
 
 		keyPress.beat.play();
+		keyPress.button.select();
 	}
 };
 
