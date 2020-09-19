@@ -10,3 +10,6 @@ This project is a app that produce beats whit keyboards :musical_keyboard: :musi
 2. add a key event lister to know which key is pressed
 3. create a function to handle if the key is one of the key that we want
 4. create a class for handle the play method
+5. add the logic to change the background and the border for the buttons
+
+[see the deploy](https://bernardoaguayoortega.github.io/beat-box) :fire: :desktop_computer:
